@@ -1,4 +1,7 @@
 
+from enum import auto
+
+
 class Asiento:
     def __init__(self,color, precio, registro):
         self.color = color
@@ -19,7 +22,7 @@ class Auto:
         self.motor = motor
         self.registro = registro
 
-    def catidadAsientos(self):
+    def cantidadAsientos(self):
         cantidad = 0
         for asiento in self.asientos:
             if asiento.__class__.__name__ == "Asiento":
